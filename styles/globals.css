@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animate-pulse {
+  animation-name: pulse;
+  animation-duration: 3.25s; /* Change this to adjust the duration */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
