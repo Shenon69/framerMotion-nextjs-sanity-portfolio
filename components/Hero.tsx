@@ -20,16 +20,25 @@ export default function ({ }: Props) {
         <div className='h-screen flex flex-col space-y-8 items-center justify-center overflow-hidden'>
             <BackgroundCircles />
             <img
-                className='relative rounded-full h-32 w-32'
+                className='relative rounded-full h-32 w-32 shadow-lg shadow-yellow-500/50 glow'
                 src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t1.6435-9/126618938_173013611135663_878960234911614943_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=oS0xbd7cYqgAX_rJPoc&_nc_ht=scontent.fcmb1-2.fna&oh=00_AfBqSzcgYusIsQ1X60pT6uLuXNm92giFU5DOK54j1RE3Tg&oe=644F0F21"
                 alt="profile" />
 
-            <h2 className='uppercase text-sm text-gray-500 pb-2 tracking-[15px] animate-pulse'>Software Engineer</h2>
-            <h1>
+            <h2 className='uppercase text-md text-gray-500 pb-2 tracking-[15px] animate-pulse '>Software Engineer</h2>
+            <h1 className='text-5xl lg:6xl font-semibold px-10'>
                 <div>
-                    <span className='font-bold text-4xl'>&lt;{text}<Cursor cursorColor='#F7A80A' />/&gt;</span>
+                    <span className='mr-3'>&lt;{text}<Cursor cursorColor='#F7A80A' />/&gt;</span>
                 </div>
             </h1>
+
+            <div>
+                <button className='heroButton'>About</button>
+                <button className='heroButton'>Experience</button>
+                <button className='heroButton'>Skills</button>
+                <button className='heroButton'>Projects</button>
+            </div>
+
+
         </div>
     )
 }

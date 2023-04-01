@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.animate-pulse {
-  animation-name: pulse;
-  animation-duration: 3.25s; /* Change this to adjust the duration */
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+@layer components {
+  .animate-pulse {
+    animation-name: pulse;
+    animation-duration: 3.25s; /* Change this to adjust the duration */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .glow {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+  }
+
+  .heroButton {
+    @apply px-4 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#F7A80A]/40 hover:text-[#F7A80A]/40;
+  }
 }
